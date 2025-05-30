@@ -1,10 +1,13 @@
+"use client"
+
 import Link from 'next/link'
 import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa'
 import { Allura } from 'next/font/google'
+import { motion } from 'framer-motion';
 
 const allura = Allura({ subsets: ["latin"], weight: "400" });
 
-export default function Footer() {
+const Footer = () => {
     return (
         <footer className="mt-8 bg-dark/5 dark:bg-dark border-t border-gray-200 dark:border-gray-800">
             <div className="container max-w-7xl mx-auto px-4 py-8">
@@ -17,33 +20,41 @@ export default function Footer() {
                     </div>
 
                     <div className="flex space-x-6">
-                        <a
-                            href="https://github.com/yourusername"
+                        <motion.a href={"https://github.com/Rohith-S-07"}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-secondary hover:text-primary transition-colors"
+                            className='text-2xl text-gray-600 hover:text-primary dark:text-gray-300
+                     transition-colors duration-300'
+                            whileHover={{ scale: 1.2 }}
+                            whileTap={{ scale: 0.9 }}
                         >
-                            <FaGithub className="h-6 w-6" />
-                        </a>
-                        <a
-                            href="https://linkedin.com/in/"
+                            <FaGithub />
+                        </motion.a>
+                        <motion.a href={"https://www.linkedin.com/in/rohith-s07/"}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-secondary hover:text-primary transition-colors"
+                            className='text-2xl text-gray-600 hover:text-primary dark:text-gray-300
+                     transition-colors duration-300'
+                            whileHover={{ scale: 1.2 }}
+                            whileTap={{ scale: 0.9 }}
                         >
-                            <FaLinkedin className="h-6 w-6" />
-                        </a>
-                        <a
-                            href="https://instagram.com/in/"
+                            <FaLinkedin />
+                        </motion.a>
+                        <motion.a href={"https://www.instagram.com/rohith.07._/"}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-secondary hover:text-primary transition-colors"
+                            className='text-2xl text-gray-600 hover:text-primary dark:text-gray-300
+                     transition-colors duration-300'
+                            whileHover={{ scale: 1.2 }}
+                            whileTap={{ scale: 0.9 }}
                         >
-                            <FaInstagram className="h-6 w-6" />
-                        </a>
+                            <FaInstagram />
+                        </motion.a>
                     </div>
                 </div>
             </div>
         </footer>
     )
-} 
+}
+
+export default Footer;

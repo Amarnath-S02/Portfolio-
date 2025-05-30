@@ -6,7 +6,7 @@ import React from 'react'
 import { Poppins, Pacifico, Delicious_Handrawn } from "next/font/google";
 import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import { motion } from 'framer-motion';
-import { fadeInUp, scaleIn } from '@/utils/animation';
+import { fadeInUp, scaleIn, fadeIn } from '@/utils/animation';
 
 const poppins = Poppins({ subsets: ["latin"], weight: "400" });
 const pacifico = Pacifico({ subsets: ["latin"], weight: "400" });
@@ -26,35 +26,79 @@ const Hero = () => {
 
                 <motion.h1
                     {...fadeInUp}
-                    transition={{ delay: 0.3 }}
-                    className={`text-4xl md:text-6xl font-bold mb-6 ${poppins.className}`}>Hi, I&apos;m <span className={`text-primary ${pacifico.className}`}>Rohith </span></motion.h1>
+                    transition={{ delay: 0.4 }}
+                    className={`text-4xl md:text-6xl font-bold mb-6 ${poppins.className}`}>Hi, I&apos;m
+                    <motion.span
+                        {...fadeIn}
+                        transition={{ delay: 0.8 }}
+                        className={`text-primary ${pacifico.className}`}> Rohith
+                    </motion.span>
+                </motion.h1>
 
                 <motion.p
                     {...fadeInUp}
-                    transition={{ delay: 0.3 }} className={`text-2xl md:text-3xl text-gray-600 dark:text-gray-300 mb-6 ${delicious.className}`}>Full Stack Developer | UI / UX Enthusiast</motion.p>
-
-                <div className='flex justify-center space-x-4 mb-6'>
-                    <Link href={"/"} className='text-2xl text-gray-600 hover:text-primary dark:text-gray-300
-                     transition-colors duration-300'>
+                    transition={{ delay: 0.3 }} className={`text-2xl md:text-3xl text-gray-600 dark:text-gray-300 mb-6 ${delicious.className}`}>Full Stack Developer | UI / UX Enthusiast
+                </motion.p>
+                <motion.div
+                    {...fadeInUp}
+                    transition={{ delay: 0.5 }}
+                    className='flex justify-center space-x-4 mb-6'>
+                    <motion.a href={"https://github.com/Rohith-S-07"}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className='text-2xl text-gray-600 hover:text-primary dark:text-gray-300
+                     transition-colors duration-300'
+                        whileHover={{ scale: 1.2 }}
+                        whileTap={{ scale: 0.9 }}
+                    >
                         <FaGithub />
-                    </Link>
-                    <Link href={"/"} className='text-2xl text-gray-600 hover:text-primary dark:text-gray-300
-                     transition-colors duration-300'>
+                    </motion.a>
+                    <motion.a href={"https://www.linkedin.com/in/rohith-s07/"}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className='text-2xl text-gray-600 hover:text-primary dark:text-gray-300
+                     transition-colors duration-300'
+                        whileHover={{ scale: 1.2 }}
+                        whileTap={{ scale: 0.9 }}
+                    >
                         <FaLinkedin />
-                    </Link>
-                    <Link href={"/"} className='text-2xl text-gray-600 hover:text-primary dark:text-gray-300
-                     transition-colors duration-300'>
+                    </motion.a>
+                    <motion.a href={"https://www.instagram.com/rohith.07._/"}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className='text-2xl text-gray-600 hover:text-primary dark:text-gray-300
+                     transition-colors duration-300'
+                        whileHover={{ scale: 1.2 }}
+                        whileTap={{ scale: 0.9 }}
+                    >
                         <FaInstagram />
-                    </Link>
-                </div>
+                    </motion.a>
+                </motion.div>
 
-                <div className='flex flex-col md:flex-row justify-center gap-4'>
-                    <Link href={"/projects"} className='bg-primary inline-block w-full md:w-auto text-white px-8 py-3
-                    rounded-lg hover:bg-primary/80 transition-colors'>View Projects</Link>
+                <motion.div
+                    {...fadeInUp}
+                    transition={{ delay: 0.4 }}
+                    className='flex flex-col md:flex-row justify-center gap-4'>
+                    <motion.div
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                    >
+                        <Link href={"/projects"}
+                            className='bg-primary inline-block w-full md:w-auto text-white px-8 py-3 rounded-lg hover:bg-primary/80 transition-colors'>
+                            View Projects
+                        </Link>
+                    </motion.div>
 
-                    <Link href={"/contact"} className='inline-block w-full bg-gray-500  md:w-auto text-gray-800 dark:text-white px-8 py-3 
-                    rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors'>Contact Me</Link>
-                </div>
+                    <motion.div
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                    >
+                        <Link href={"/contact"}
+                            className='inline-block w-full bg-gray-500  md:w-auto text-gray-800 dark:text-white px-8 py-3 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors'>
+                            Contact Me
+                        </Link>
+                    </motion.div>
+                </motion.div>
             </div>
         </section>
     )

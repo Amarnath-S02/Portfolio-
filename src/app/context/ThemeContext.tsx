@@ -6,7 +6,7 @@ type Theme = "light" | "dark";
 
 interface ThemeContextType {
     theme: Theme;
-    toggletheme: () => void;
+    toggleTheme: () => void;
     setTheme: (theme: Theme) => void;
 }
 
@@ -24,7 +24,7 @@ export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
     }
 
     // Toggle the Theme
-    const toggletheme = () => {
+    const toggleTheme = () => {
         setTheme(theme === "light" ? "dark" : "light");
     }
 
@@ -46,7 +46,7 @@ export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
     }
 
     return (
-        <ThemeContext.Provider value={{ theme, setTheme, toggletheme }}>
+        <ThemeContext.Provider value={{ theme, setTheme, toggleTheme }}>
             {children}
         </ThemeContext.Provider>
     )
