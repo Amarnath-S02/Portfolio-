@@ -44,7 +44,7 @@ const Projects = () => {
                             />
                         </div>
                         <motion.h3
-                            className={`text-primary ${delicious.className} text-xl font-semibold mb-2`}
+                            className={`text-primary ${delicious.className} text-2xl font-light mb-2`}
                             whileHover={{ x: 5 }}
                             transition={{ type: "spring", stiffness: 300 }}
                         >
