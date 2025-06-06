@@ -33,11 +33,13 @@ const About = () => {
         className="mb-16"
         {...fadeInUp}
       >
-        <p className='text-lg text-secondary max-w-3xl mx-auto text-center'>
-          Passionate web developer with a strong grasp of the MERN stack,
-          focused on building responsive anduser-friendly web applications.
-          Seeking a full-time opportunity to contribute to impactful projects,
-          collaborate with dynamic teams, and continue growing as a developer.
+        <p className='text-lg text-secondary max-w-3xl mx-auto text-center mb-4'>
+          I&apos;m a full-stack developer with a strong focus on frontend development using React and Tailwind CSS.
+          I enjoy crafting responsive, clean, and user-friendly interfaces, backed by solid MERN stack experience.
+        </p>
+
+        <p className='text-lg text-secondary max-w-3xl mx-auto text-center mb-4'>
+          I&apos;m looking for a full-time role where I can contribute to impactful projects and grow with a collaborative team.
         </p>
       </motion.section>
 

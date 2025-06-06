@@ -27,7 +27,7 @@ const Projects = () => {
                 initial="initial"
                 animate="animate"
             >
-                {projects.map((project) => (
+                {projects.slice(0,3).map((project) => (
                     <motion.article
                         key={project.title}
                         className="bg-gray-50 dark:bg-dark/50 rounded-lg shadow-md p-6"
@@ -44,14 +44,14 @@ const Projects = () => {
                             />
                         </div>
                         <motion.h3
-                            className="text-xl font-semibold mb-2"
+                            className={`text-primary ${delicious.className} text-xl font-semibold mb-2`}
                             whileHover={{ x: 5 }}
                             transition={{ type: "spring", stiffness: 300 }}
                         >
                             {project.title}
                         </motion.h3>
                         <motion.p
-                            className="text-gray-600 dark:text-gray-300 mb-4"
+                            className="text-gray-600 dark:text-gray-400 mb-4 text-sm"
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ delay: 0.2 }}
