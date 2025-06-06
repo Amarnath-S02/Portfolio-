@@ -2,22 +2,28 @@
 
 import React from 'react'
 import { FaCode, FaLaptopCode } from 'react-icons/fa'
+import { Pacifico, Delicious_Handrawn } from "next/font/google";
 import { motion } from 'framer-motion'
 import {
   fadeInUp,
-  fadeInDown,
   fadeIn,
   staggerContainer,
   cardHover,
   cardHoverSmall
 } from '@/utils/animation'
 
+const pacifico = Pacifico({ subsets: ["latin"], weight: "400" });
+const delicious = Delicious_Handrawn({ subsets: ["latin"], weight: "400" });
+
 const About = () => {
   return (
     <div className='container max-w-7xl mx-auto py-20'>
+
       <motion.h1
-        className="text-4xl font-bold mb-8 text-center"
-        {...fadeInDown}
+        className={`text-primary ${pacifico.className} text-4xl font-bold mb-10 text-center`}
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
       >
         About Me
       </motion.h1>
@@ -42,7 +48,7 @@ const About = () => {
         transition={{ delay: 0.2 }}
       >
         <motion.h2
-          className="section-title"
+          className={`text-primary ${delicious.className} section-title`}
           {...fadeInUp}
         >
           Skills
@@ -105,7 +111,7 @@ const About = () => {
         transition={{ delay: 0.4 }}
       >
         <motion.h2
-          className="section-title"
+          className={`text-primary ${delicious.className} section-title`}
           {...fadeInUp}
         >
           Experience
@@ -141,7 +147,7 @@ const About = () => {
         transition={{ delay: 0.6 }}
       >
         <motion.h2
-          className="section-title"
+          className={`text-primary ${delicious.className} section-title`}
           {...fadeInUp}
         >
           Education

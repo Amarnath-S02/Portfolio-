@@ -4,14 +4,18 @@ import { projects } from '@/contents/projects'
 import Image from 'next/image'
 import React from 'react'
 import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa'
+import { Delicious_Handrawn } from "next/font/google";
+
 import { motion } from 'framer-motion'
 import { fadeInUp, staggerContainer, cardHoverSmall } from '@/utils/animation'
+
+const delicious = Delicious_Handrawn({ subsets: ["latin"], weight: "400" });
 
 const Projects = () => {
     return (
         <section className='py-20 container max-w-7xl mx-auto px-4'>
             <motion.h2
-                className="text-3xl font-bold mb-12 text-center"
+                className={`text-primary ${delicious.className} text-3xl font-bold mb-10 text-center`}
                 {...fadeInUp}
             >
                 Featured Projects
@@ -26,7 +30,7 @@ const Projects = () => {
                 {projects.map((project) => (
                     <motion.article
                         key={project.title}
-                        className="bg-white dark:bg-dark/50 rounded-lg shadow-md p-6"
+                        className="bg-gray-50 dark:bg-dark/50 rounded-lg shadow-md p-6"
                         variants={fadeInUp}
                         {...cardHoverSmall}
                     >

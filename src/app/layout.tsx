@@ -18,6 +18,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Rohith S - Portfolio",
   description: "A Portfolio website built using Next.js, Typscript, Tailwind CSS and Framer Motion",
+  icons: {
+    icon: "/rsicon.png",
+  },
 };
 
 export default function RootLayout({
