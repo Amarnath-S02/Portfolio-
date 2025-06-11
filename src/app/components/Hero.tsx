@@ -13,15 +13,53 @@ const pacifico = Pacifico({ subsets: ["latin"], weight: "400" });
 const delicious = Delicious_Handrawn({ subsets: ["latin"], weight: "400" });
 
 const Hero = () => {
+
+    const size = 165;
+    const radius = (size - 5) / 2;
     return (
         <section className='py-20 container max-w-7xl mx-auto px-4'>
             <div className='max-w-3xl mx-auto text-center'>
                 <motion.div
                     {...scaleIn}
                     transition={{ delay: 0.2 }}
-                    className='flex flex-col items-center mb-4'>
-                    <Image src="/profile.avif" alt='Profile Image' width={100} height={100} className='rounded-full
-                    mb-2 w-32 h-32 object-cover ring-2 ring-primary'/>
+                    className="flex items-center justify-center mb-8">
+
+                    <svg width={size} height={size} className="absolute">
+                        <motion.circle
+                            cx={size / 2}
+                            cy={size / 2}
+                            r={radius}
+                            stroke="#007AFF"
+                            strokeWidth="5"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            fill="none"
+                            initial={{ strokeDasharray: '24 10 0 0' }}
+                            animate={{
+                                strokeDasharray: [
+                                    '15 30 25 25',
+                                    '16 45 92 72',
+                                    '4 50 22 22',
+                                ],
+                                rotate: [120, 360],
+                            }}
+                            transition={{
+                                duration: 15,
+                                repeat: Infinity,
+                                repeatType: 'reverse',
+                            }}
+                        />
+                    </svg>
+
+                    {/* Profile Image */}
+                    <Image
+                        src="/rohith1.jpg"
+                        alt="Profile Image"
+                        width={160}
+                        height={160}
+                        className="rounded-full object-cover z-10"
+                        unoptimized
+                    />
                 </motion.div>
 
                 <motion.h1
