@@ -131,10 +131,12 @@ const Hero = () => {
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                     >
-                        <Link href={"/contact"}
+                        <a
+                            href="/rohith_resume.pdf"
+                            download
                             className='inline-block w-full bg-gray-400  md:w-auto text-gray-800 dark:text-white px-8 py-3 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors'>
-                            Contact Me
-                        </Link>
+                            Download Resume
+                        </a>
                     </motion.div>
                 </motion.div>
             </div>
