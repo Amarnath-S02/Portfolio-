@@ -36,10 +36,9 @@ const About = () => {
         {...fadeInUp}
       >
         <p className='text-lg text-secondary max-w-3xl mx-auto text-center mb-4'>
-          I&apos;m a full-stack developer with a strong focus on frontend development using React and Tailwind CSS.
-          I enjoy crafting responsive, clean, and user-friendly interfaces, backed by solid MERN stack experience.
-        </p>
-
+      I&apos;m a full-stack developer with expertise in building robust and scalable applications using the MERN stack. 
+      I enjoy creating efficient, maintainable code and delivering seamless user experiences across web applications.
+    </p>
         <p className='text-lg text-secondary max-w-3xl mx-auto text-center mb-4'>
           I&apos;m looking for a full-time role where I can contribute to impactful projects and grow with a collaborative team.
         </p>
@@ -73,11 +72,10 @@ const About = () => {
               <h3 className={`${pacifico.className} text-2xl font-semibold mb-4 flex text-primary`}> <GiPaintBrush className="h-8 w-8 me-2" />Frontend</h3>
               <ul className="text-secondary space-y-2 dark:text-gray-300">
                 <li>HTML / CSS</li>
+                <li>SCSS</li>
                 <li>Bootstrap</li>
-                <li>Tailwind CSS</li>
                 <li>JavaScript</li>
-                <li>TypeScript</li>
-                <li>React / Next.js</li>
+                <li>React </li>
               </ul>
             </div>
           </motion.div>
@@ -189,10 +187,10 @@ const About = () => {
             {...cardHoverSmall}
           >
             <div className='bg-white dark:bg-dark/70 backdrop-blur-md p-6 rounded-xl h-full'>
-              <h3 className="text-xl font-semibold mb-2">Bachelor of Science in Computer Science</h3>
-              <p className="text-primary mb-2">Jairam Arts and Science College • 2019 - 2022</p>
+              <h3 className="text-xl font-semibold mb-2">Bsc - Physics</h3>
+              <p className="text-primary mb-2">Sri Ramakrishna Mission Vidyalya College of Arts and Science • 2019 - 2022</p>
               <p className="text-secondary dark:text-gray-300">
-                Graduated with distinction. Built a strong foundation in programming and core
+                Graduated with distinction. Built a strong foundation in C programming and core
                 computer science concepts.
               </p>
             </div>

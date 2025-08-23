@@ -13,14 +13,14 @@ const Footer = () => {
             <div className="container max-w-7xl mx-auto px-4 py-8">
                 <div className="flex flex-col md:flex-row justify-between items-center">
                     <div className="mb-4 md:mb-0 text-center md:text-left">
-                        <Link href="/" className={`text-4xl font-bold text-primary ${allura.className}`}>R S</Link>
+                        <Link href="/" className={`text-4xl font-bold text-primary ${allura.className}`}>Amar</Link>
                         <p className="text-sm text-secondary mt-2">
                             &copy; {new Date().getFullYear()} All rights reserved.
                         </p>
                     </div>
 
                     <div className="flex space-x-6">
-                        <motion.a href={"https://github.com/Rohith-S-07"}
+                        <motion.a href={"https://github.com/Amarnath-S02"}
                             target="_blank"
                             rel="noopener noreferrer"
                             className='text-2xl text-gray-600 hover:text-primary dark:text-gray-300
@@ -30,7 +30,7 @@ const Footer = () => {
                         >
                             <FaGithub />
                         </motion.a>
-                        <motion.a href={"https://www.linkedin.com/in/rohith-s07/"}
+                        <motion.a href={"https://www.linkedin.com/in/amarnath-s-02304a299/"}
                             target="_blank"
                             rel="noopener noreferrer"
                             className='text-2xl text-gray-600 hover:text-primary dark:text-gray-300
@@ -40,7 +40,7 @@ const Footer = () => {
                         >
                             <FaLinkedin />
                         </motion.a>
-                        <motion.a href={"https://www.instagram.com/rohith.07._/"}
+                        <motion.a href={"https://www.instagram.com/amar_._rr/"}
                             target="_blank"
                             rel="noopener noreferrer"
                             className='text-2xl text-gray-600 hover:text-primary dark:text-gray-300

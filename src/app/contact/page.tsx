@@ -107,7 +107,7 @@ const ContactPage = () => {
                             <div>
                                 <h3 className="font-semibold">Email</h3>
                                 <a href="mailto:rohithskr01@gmail.com" className="text-secondary hover:text-primary">
-                                    rohithskr01@gmail.com
+                                    skamar003@gmail.com
                                 </a>
                             </div>
                         </motion.div>
@@ -122,7 +122,7 @@ const ContactPage = () => {
                             <div>
                                 <h3 className="font-semibold">Phone</h3>
                                 <a href="tel:+919677813318" className="text-secondary hover:text-primary">
-                                    +91 9677813318
+                                    +91 9361136156
                                 </a>
                             </div>
                         </motion.div>
@@ -136,7 +136,7 @@ const ContactPage = () => {
                             <FaMapMarkerAlt className="h-6 w-6 text-primary" />
                             <div>
                                 <h3 className="font-semibold">Location</h3>
-                                <p className="text-secondary">Salem, Tamil Nadu</p>
+                                <p className="text-secondary">Palani, Tamil Nadu</p>
                             </div>
                         </motion.div>
                     </motion.div>

@@ -53,7 +53,7 @@ const Hero = () => {
 
                     {/* Profile Image */}
                     <Image
-                        src="/rohith1.jpg"
+                        src="/amar1.png"
                         alt="Profile Image"
                         width={160}
                         height={160}
@@ -69,19 +69,19 @@ const Hero = () => {
                     <motion.span
                         {...fadeIn}
                         transition={{ delay: 0.8 }}
-                        className={`text-primary ${pacifico.className}`}> Rohith
+                        className={`text-primary ${pacifico.className}`}> Amarnath
                     </motion.span>
                 </motion.h1>
 
                 <motion.p
                     {...fadeInUp}
-                    transition={{ delay: 0.3 }} className={`text-2xl md:text-3xl text-gray-600 dark:text-gray-300 mb-6 ${delicious.className}`}>Full Stack Developer | UI / UX Enthusiast
+                    transition={{ delay: 0.3 }} className={`text-2xl md:text-3xl text-gray-600 dark:text-gray-300 mb-6 ${delicious.className}`}>Full Stack Developer
                 </motion.p>
                 <motion.div
                     {...fadeInUp}
                     transition={{ delay: 0.5 }}
                     className='flex justify-center space-x-4 mb-6'>
-                    <motion.a href={"https://github.com/Rohith-S-07"}
+                    <motion.a href={"https://github.com/Amarnath-S02"}
                         target="_blank"
                         rel="noopener noreferrer"
                         className='text-2xl text-gray-600 hover:text-primary dark:text-gray-300
@@ -91,7 +91,7 @@ const Hero = () => {
                     >
                         <FaGithub />
                     </motion.a>
-                    <motion.a href={"https://www.linkedin.com/in/rohith-s07/"}
+                    <motion.a href={"https://www.linkedin.com/in/amarnath-s-02304a299"}
                         target="_blank"
                         rel="noopener noreferrer"
                         className='text-2xl text-gray-600 hover:text-primary dark:text-gray-300
@@ -101,7 +101,7 @@ const Hero = () => {
                     >
                         <FaLinkedin />
                     </motion.a>
-                    <motion.a href={"https://www.instagram.com/rohith.07._/"}
+                    <motion.a href={"https://www.instagram.com/amar_._rr/"}
                         target="_blank"
                         rel="noopener noreferrer"
                         className='text-2xl text-gray-600 hover:text-primary dark:text-gray-300
@@ -132,7 +132,7 @@ const Hero = () => {
                         whileTap={{ scale: 0.95 }}
                     >
                         <a
-                            href="/rohith_resume.pdf"
+                            href="/resume_amarnath.pdf"
                             download
                             className='inline-block w-full bg-gray-400  md:w-auto text-gray-800 dark:text-white px-8 py-3 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors'>
                             Download Resume

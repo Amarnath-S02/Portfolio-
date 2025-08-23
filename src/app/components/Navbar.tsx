@@ -32,7 +32,7 @@ const Navbar = () => {
             <div className='container max-w-7xl mx-auto px-4'>
                 {/* Desktop Menu */}
                 <div className='flex items-center justify-between h-16'>
-                    <Link href="/" className={`text-4xl font-bold text-primary ${allura.className}`}>R S</Link>
+                    <Link href="/" className={`text-4xl font-bold text-primary ${allura.className}`}>Amar</Link>
 
                     {/* Desktop menus */}
                     <div className='hidden md:flex items-center space-x-8'>
