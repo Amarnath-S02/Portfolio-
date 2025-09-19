@@ -53,7 +53,7 @@ const Hero = () => {
 
                     {/* Profile Image */}
                     <Image
-                        src="/amar2.png"
+                        src="/amarnath.png"
                         alt="Profile Image"
                         width={160}
                         height={160}
