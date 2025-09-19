@@ -52,14 +52,17 @@ const Hero = () => {
                     </svg>
 
                     {/* Profile Image */}
-                    <Image
-                        src="/amarnath.png"
-                        alt="Profile Image"
-                        width={160}
-                        height={160}
-                        className="rounded-full object-cover z-10"
-                        unoptimized
-                    />
+            <div className="w-40 h-40 rounded-full overflow-hidden z-10">
+  <Image
+    src="/amarnath.png"
+    alt="Profile Image"
+    width={160}
+    height={160}
+    className="object-cover"
+    unoptimized
+  />
+</div>
+
                 </motion.div>
 
                 <motion.h1
